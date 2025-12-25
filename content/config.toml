@@ -1,28 +1,34 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
-favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+title = "Runze Jiang"
+description = "master student at the Peking University."
+favicon = "/1F4AB.svg"
+last_updated = "December 25, 2025"
 
 [author]
-name = "Jiale Liu"
-title = "PhD Student"
-institution = "University of Example"
+name = "Runze Jiang"
+title = "Master Student"
+institution = "Peking University"
 avatar = "/bio.jpg"
 
 [social]
 # Contact information (leave blank or delete to hide)
 
-email = "john.doe@example.com"
-location = "City, Country"
+# 单个邮箱写法：
+# email = "j944029213@163.com"
+# 多个邮箱写法：
+email = [
+  "2501210087@stu.pku.edu.cn",
+  "keith.jiang10@gmail.com",
+  "j944029213@163.com"
+]
+location = "Beijing, China"
 location_url = "https://maps.google.com"
 location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
+  "Peking University, Beijing, China"
 ]
 google_scholar = "https://scholar.google.com"
 orcid = "https://orcid.org"
-github = "https://github.com"
+github = "https://github.com/keith-Jiang"
 linkedin = "https://linkedin.com"
 
 [features]
@@ -33,7 +39,7 @@ enable_likes = true
 enable_one_page_mode = false
 
 [[navigation]]
-title = "About"
+title = "Homepage"
 type = "page"
 target = "about"
 href = "/"
@@ -45,22 +51,34 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Teaching"
-type = "page"
-target = "teaching"
-href = "/teaching"
-
-[[navigation]]
-title = "Awards"
+title = "Honors and Awards"
 type = "page"
 target = "awards"
 href = "/awards"
 
 [[navigation]]
-title = "Services"
+title = "Projects"
 type = "page"
-target = "services"
-href = "/services"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "Educations"
+type = "page"
+target = "educations"
+href = "/educations"
+
+[[navigation]]
+title = "Internships"
+type = "page"
+target = "internships"
+href = "/internships"
+
+[[navigation]]
+title = "Blogs"
+type = "page"
+target = "blogs"
+href = "/blogs"
 
 [[navigation]]
 title = "CV"

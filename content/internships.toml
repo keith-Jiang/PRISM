@@ -1,0 +1,23 @@
+type = "card"
+title = "Internships"
+description = "My professional and research experience."
+
+[[items]]
+logo = "/thu-logo.svg"
+institution = "Tsinghua University"
+department = "Department of Computer Science and Technology (THUIR)"
+major = "Large Language Model Reinforcement Learning"
+degree = "Research Intern"
+date = "2025.9 - Present"
+link = "http://www.thuir.cn/"
+content = "Advised by Prof. Yiqun Liu. Focused on LLM Reinforcement Learning (Reasoning), specifically exploring reasoning capabilities and strategy optimization within large language models."
+
+[[items]]
+logo = "/bimsa-logo.png"
+institution = "Beijing Institute of Mathematical Sciences and Applications"
+department = "Artificial Intelligence and Machine Learning Group (AGI Lab)"
+major = "LLMs & Open Information Extraction"
+degree = "Research Intern"
+date = "2025.3 - 2025.9"
+link = "https://www.bimsa.cn/zh-CN/groups/artificial-intelligence-and-machine-learning.html"
+content = "Advised by Researcher Mingming Sun. Conducted research on Open Information Extraction (OIE) tasks to bridge the gap between Large Language Models and structured knowledge representation."

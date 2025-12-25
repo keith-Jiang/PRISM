@@ -3,25 +3,27 @@ title = "Awards"
 description = "Honors and awards I have received."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2025"
-content = "Description of the award."
-
-[[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2024"
-content = "Description of the award."
-
-[[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "National Scholarship"
+subtitle = "Ministry of Education of P.R. China"
 date = "2023"
-content = "Description of the award."
+
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "Outstanding Graduate of Liaoning Province"
+subtitle = "Education Department of Liaoning Province"
+date = "2025"
+
+[[items]]
+title = "Kaggle Silver Medal (Top 5%)"
+subtitle = "Optiver - Trading at the Close"
+date = "2023"
+
+[[items]]
+title = "Tao Li Bread Alumni Scholarship"
+subtitle = "Dalian University of Technology"
 date = "2022"
-content = "Description of the award."
+
+[[items]]
+title = "Academic Excellence & Merit Student Awards"
+subtitle = "Dalian University of Technology"
+date = "2022 — 2024"

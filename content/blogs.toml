@@ -1,0 +1,25 @@
+type = "blog"
+title = "Blogs"
+description = "Blogs for documenting some of my experiments and thoughts."
+
+# 博客文章列表
+# 每篇博客对应 content/blogs/ 文件夹下的一个 .md 文件
+# id 必须与 markdown 文件名一致（不含 .md 后缀）
+
+[[posts]]
+id = "my-first-blog"  # 对应 content/blogs/my-first-blog.md
+title = "我的第一篇博客"
+date = "2024-12-25"
+description = "这是我的第一篇博客文章，记录了一些有趣的想法和实验。"
+tags = ["随笔", "技术"]
+cover = "/blog-covers/first-blog.jpg"  # 封面图片（可选）
+author = "Runze Jiang"
+
+[[posts]]
+id = "deep-learning-notes"
+title = "深度学习学习笔记"
+date = "2024-12-20"
+description = "记录深度学习过程中的一些心得体会和技术要点。"
+tags = ["深度学习", "AI", "笔记"]
+cover = "/blog-covers/deep-learning.jpg"
+author = "Runze Jiang"

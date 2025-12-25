@@ -1,0 +1,21 @@
+type = "card"
+title = "Educations"
+description = "My educational background."
+
+[[items]]
+logo = "/pku-logo.png"  # 校徽图片路径（放在 public 文件夹）
+institution = "Peking University"  # 学校名称
+department = "School of Mathematical Sciences"  # 院系
+major = "Data Science"  # 专业
+degree = "Master of Science"  # 学位
+date = "2025 - Present"  # 时间
+link = "https://www.pku.edu.cn/"
+
+[[items]]
+logo = "/dut-logo.png"  # 另一个校徽
+institution = "Dalian University of Technology"
+department = "School of Mathematical Sciences"
+major = "Mathematics and Applied Mathematics"
+degree = "Bachelor of Science"
+date = "2021 - 2025"
+link = "https://www.dlut.edu.cn/"

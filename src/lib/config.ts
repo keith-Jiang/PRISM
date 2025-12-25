@@ -16,7 +16,7 @@ export interface SiteConfig {
         avatar: string;
     };
     social: {
-        email?: string;
+        email?: string | string[];
         location?: string;
         location_url?: string;
         location_details?: string[];

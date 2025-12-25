@@ -1,0 +1,13 @@
+type = "card"
+title = "Projects"
+description = "Open Source Contributions."
+
+[[items]]
+logo = "/EAX-logo.svg"  # 项目图标（放在 public 文件夹）
+institution = "EvoAgentX"  # 项目名称
+department = "GitHub"  # 项目类型
+major = "Self-Evolving Multi-Agent Framework"  # 项目描述
+link = "https://github.com/EvoAgentX/EvoAgentX"  # 项目链接（可选）
+date = "2025.9 - Present"  # 时间
+content = "A Self-Evolving Multi-Agent Framework for HowOne AI, featuring automated workflow generation, diverse evolution algorithms, and seamless tool integration."  # 详细描述
+tags = ["LLM Agent", "Self-Evolving Agents", "HowOne AI"]  # 技术标签

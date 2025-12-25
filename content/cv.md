@@ -1,10 +1,10 @@
 ## Education
 
-**The University of Example**, PhD in Natural Science, *2025 - Present*
+**Peking University**, M.Sc. in Data Science, *2025 - Present*
 - Research focus: Mathematical Principles of Natural Philosophy
-- Supervisor: Prof. Advisor One and Dr. Advisor Two
+- Supervisor: Prof. Wenbin Huang
 
-**The University of Example**, BSc in Natural Science, *2021 - 2025*
+**Dalian University of Technology**, BSc in Mathematics and Applied Mathematics, *2021 - 2025*
 - Graduated with First Class Honours
 
 ## Experience

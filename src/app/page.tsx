@@ -8,9 +8,10 @@ import News, { NewsItem } from '@/components/home/News';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
+import BlogPage from '@/components/pages/BlogPage';
 
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, BlogPageConfig } from '@/types/page';
 
 // Define types for section config
 interface SectionConfig {
@@ -29,7 +30,8 @@ type PageData =
   | { type: 'about', id: string, sections: SectionConfig[] }
   | { type: 'publication', id: string, config: PublicationPageConfig, publications: Publication[] }
   | { type: 'text', id: string, config: TextPageConfig, content: string }
-  | { type: 'card', id: string, config: CardPageConfig };
+  | { type: 'card', id: string, config: CardPageConfig }
+  | { type: 'blog', id: string, config: BlogPageConfig };
 
 export default function Home() {
   const config = getConfig();
@@ -113,6 +115,12 @@ export default function Home() {
             id: item.target,
             config: pageConfig as CardPageConfig
           } as PageData;
+        } else if (pageConfig.type === 'blog') {
+          return {
+            type: 'blog',
+            id: item.target,
+            config: pageConfig as BlogPageConfig
+          } as PageData;
         }
         return null;
       })
@@ -193,6 +201,12 @@ export default function Home() {
               )}
               {page.type === 'card' && (
                 <CardPage
+                  config={page.config}
+                  embedded={true}
+                />
+              )}
+              {page.type === 'blog' && (
+                <BlogPage
                   config={page.config}
                   embedded={true}
                 />

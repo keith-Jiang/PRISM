@@ -67,12 +67,17 @@ export default function Profile({ author, social, features, researchInterests }:
         }
     };
 
+    // 处理邮箱：支持单个邮箱或多个邮箱
+    const emails = social.email ? (Array.isArray(social.email) ? social.email : [social.email]) : [];
+    const primaryEmail = emails[0]; // 使用第一个邮箱作为主邮箱
+
     const socialLinks = [
-        ...(social.email ? [{
+        ...(primaryEmail ? [{
             name: 'Email',
-            href: `mailto:${social.email}`,
+            href: `mailto:${primaryEmail}`,
             icon: EnvelopeIcon,
             isEmail: true,
+            allEmails: emails, // 传递所有邮箱
         }] : []),
         ...(social.location || social.location_details ? [{
             name: 'Location',
@@ -267,7 +272,12 @@ export default function Profile({ author, social, features, researchInterests }:
                                                         </div>
                                                     )}
                                                 </div>
-                                                <p className="break-words">{social.email?.replace('@', ' (at) ')}</p>
+                                                {/* 显示所有邮箱 */}
+                                                <div className="space-y-1">
+                                                    {(link as { allEmails?: string[] }).allEmails?.map((email: string, index: number) => (
+                                                        <p key={index} className="break-words">{email.replace('@', ' (at) ')}</p>
+                                                    ))}
+                                                </div>
                                                 <div className="mt-2">
                                                     <a
                                                         href={link.href}
