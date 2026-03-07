@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v1.3.1 on Feb 24, 2026
+- Fixed SSR/client mismatch from font stylesheet toggling. Updated font settings to be deterministic.
+
+## v1.3.0 on Feb 22, 2026
+- Added support for i18n. Set `enabled = true` in config.toml to enable this feature.
+- Fixed some cases where the navigation bar indicator not working correctly.
+
+## v1.2.1 on Feb 19, 2026
+- Updated the navigation bar implementation to make it more responsive, dynamic, and natural.
+- The demo site is updated as well.
+
 ## v1.2.0 on Dec 6, 2025
 
 - Added GitHub Actions workflow for automatic deployment to GitHub Pages.
