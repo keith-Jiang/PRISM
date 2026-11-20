@@ -67,12 +67,6 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Honors and Awards"
-type = "page"
-target = "awards"
-href = "/awards"
-
-[[navigation]]
 title = "Projects"
 type = "page"
 target = "projects"
@@ -89,12 +83,6 @@ title = "Internships"
 type = "page"
 target = "internships"
 href = "/internships"
-
-[[navigation]]
-title = "Blogs"
-type = "page"
-target = "blogs"
-href = "/blogs"
 
 [[navigation]]
 title = "CV"

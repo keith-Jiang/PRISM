@@ -1,5 +1,5 @@
 export interface BasePageConfig {
-    type: 'about' | 'publication' | 'card' | 'text' | 'blog';
+    type: 'about' | 'publication' | 'card' | 'text';
     title: string;
     description?: string;
 }
@@ -32,19 +32,4 @@ export interface CardItem {
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
     items: CardItem[];
-}
-
-export interface BlogPost {
-    id: string;
-    title: string;
-    date: string;
-    description?: string;
-    tags?: string[];
-    cover?: string; // 封面图片
-    author?: string;
-}
-
-export interface BlogPageConfig extends BasePageConfig {
-    type: 'blog';
-    posts: BlogPost[];
 }

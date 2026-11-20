@@ -9,11 +9,13 @@
 
 ## Experience
 
-**Example Role**
-Company/Institution
-*2023 - 2024*
-- Description of key responsibilities and achievements.
-- Utilized skills to solve problems.
+**Alibaba Group**, Research Intern, *2026.1 - Present*
+- Alibaba Artificial Intelligence Governance Laboratory (AAIG), Alibaba Security
+- Research focus: AI Safety & Governance
+
+**Qingyan Q-Lab**, Research Intern, *2025.3 - 2025.9*
+- Beijing Institute of Mathematical Sciences and Applications (BIMSA)
+- Advised by Researcher Mingming Sun. Conducted research on Open Information Extraction (OIE) to bridge Large Language Models and structured knowledge representation.
 
 ## Skills
 
@@ -23,4 +25,8 @@ Company/Institution
 
 ## Awards & Honors
 
-- **First Prize in Example Competition** - Committee of Example (*2024*)
+- **National Scholarship** — Ministry of Education of P.R. China (*2023*)
+- **Outstanding Graduate of Liaoning Province, China** — Education Department of Liaoning Province (*2025*)
+- **Kaggle Silver Medal (Top 5%)** — Optiver - Trading at the Close (*2023*)
+- **Tao Li Bread Alumni Scholarship** — Dalian University of Technology (*2022*)
+- **Academic Excellence & Merit Student Awards** — Dalian University of Technology (*2022–2024*)
