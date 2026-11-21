@@ -39,7 +39,7 @@ export default function BlogPage({ config, embedded = false }: { config: BlogPag
 
             <div className="mb-7 space-y-4">
                 <label className="relative block">
-                    <span className="sr-only">{isChinese ? '搜索研究笔记' : 'Search research notes'}</span>
+                    <span className="sr-only">{isChinese ? '搜索博客' : 'Search blogs'}</span>
                     <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400" />
                     <input
                         value={query}
@@ -59,7 +59,7 @@ export default function BlogPage({ config, embedded = false }: { config: BlogPag
                         onClick={() => setActiveTag('all')}
                         className={`rounded-full px-3 py-1.5 text-xs font-mono transition-colors ${activeTag === 'all' ? 'bg-primary text-background' : 'bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-primary'}`}
                     >
-                        {isChinese ? '全部笔记' : 'All notes'}
+                        {isChinese ? '全部博客' : 'All posts'}
                     </button>
                     {tags.map((tag) => (
                         <button
@@ -75,7 +75,7 @@ export default function BlogPage({ config, embedded = false }: { config: BlogPag
 
             <div>
                 <p className="pb-3 text-xs font-mono text-neutral-500">
-                    {isChinese ? `${filteredPosts.length} 篇笔记` : `${filteredPosts.length} ${filteredPosts.length === 1 ? 'note' : 'notes'}`}
+                    {isChinese ? `${filteredPosts.length} 篇博客` : `${filteredPosts.length} ${filteredPosts.length === 1 ? 'post' : 'posts'}`}
                     {activeTag !== 'all' && ` · ${activeTag}`}
                 </p>
                 <div className="border-t border-neutral-200 dark:border-neutral-800">
@@ -113,7 +113,7 @@ export default function BlogPage({ config, embedded = false }: { config: BlogPag
 
                 {filteredPosts.length === 0 && (
                     <div className="py-12 text-center">
-                        <p className="text-neutral-500 mb-3">{isChinese ? '没有找到匹配的笔记。' : 'No matching notes found.'}</p>
+                        <p className="text-neutral-500 mb-3">{isChinese ? '没有找到匹配的博客。' : 'No matching posts found.'}</p>
                         <button onClick={() => { setQuery(''); setActiveTag('all'); }} className="text-sm text-accent hover:underline">
                             {isChinese ? '清除筛选' : 'Clear filters'}
                         </button>

@@ -18,7 +18,7 @@ export default function ResearchNotesPreview({ posts, title }: ResearchNotesPrev
     return (
         <section>
             <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-serif font-bold text-primary">{title || (isChinese ? '研究笔记' : 'Research Notes')}</h2>
+                <h2 className="text-2xl font-serif font-bold text-primary">{title || (isChinese ? '精选博客' : 'Selected Blogs')}</h2>
                 <Link href="/blogs" className="text-accent hover:text-accent-dark text-sm font-medium">
                     {isChinese ? '查看全部' : 'View all'} →
                 </Link>

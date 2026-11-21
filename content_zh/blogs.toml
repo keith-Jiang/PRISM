@@ -1,5 +1,5 @@
 type = "blog"
-title = "研究笔记"
+title = "博客"
 description = "记录科研中的学习过程、实验发现与阶段性思考。"
 
 [[posts]]

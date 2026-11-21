@@ -67,7 +67,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Research Notes"
+title = "Blogs"
 type = "page"
 target = "blogs"
 href = "/blogs"

@@ -27,7 +27,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "研究笔记"
+title = "博客"
 type = "page"
 target = "blogs"
 href = "/blogs"

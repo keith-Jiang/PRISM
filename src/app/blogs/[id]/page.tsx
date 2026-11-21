@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     const config = getPageConfig('blogs') as BlogPageConfig | null;
     const post = config?.posts.find((item) => item.id === id);
 
-    if (!post) return { title: 'Research Note Not Found' };
+    if (!post) return { title: 'Blog Post Not Found' };
     return { title: post.title, description: post.description };
 }
 

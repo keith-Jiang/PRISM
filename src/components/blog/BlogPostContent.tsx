@@ -43,12 +43,12 @@ export default function BlogPostContent({ dataByLocale, defaultLocale }: BlogPos
         >
             <Link href="/blogs" className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-dark transition-colors mb-10 no-underline">
                 <ArrowLeftIcon className="h-4 w-4" />
-                {isChinese ? '返回研究笔记' : 'Back to Research Notes'}
+                {isChinese ? '返回博客' : 'Back to Blogs'}
             </Link>
 
             <header className="mb-10 pb-8 border-b border-neutral-200 dark:border-neutral-800">
                 <p className="font-mono text-xs uppercase tracking-[0.24em] text-accent mb-4">
-                    {isChinese ? '研究笔记' : 'Research Note'}
+                    {isChinese ? '博客' : 'Blog'}
                 </p>
                 <h1 className="text-3xl sm:text-5xl font-serif font-bold text-primary leading-tight tracking-tight mb-5">
                     {post.title}
@@ -123,7 +123,7 @@ export default function BlogPostContent({ dataByLocale, defaultLocale }: BlogPos
                 )}
                 <Link href="/blogs" className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-dark transition-colors no-underline">
                     <ArrowLeftIcon className="h-4 w-4" />
-                    {isChinese ? '返回研究笔记' : 'Back to Research Notes'}
+                    {isChinese ? '返回博客' : 'Back to Blogs'}
                 </Link>
             </footer>
         </motion.article>

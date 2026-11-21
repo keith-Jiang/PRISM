@@ -1,5 +1,5 @@
 type = "blog"
-title = "Research Notes"
+title = "Blogs"
 description = "Learning notes, experiments, and discoveries from my research."
 
 [[posts]]
