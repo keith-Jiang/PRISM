@@ -5,12 +5,12 @@ import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
 import { BlogPost } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
-interface ResearchNotesPreviewProps {
+interface BlogsPreviewProps {
     posts: BlogPost[];
     title?: string;
 }
 
-export default function ResearchNotesPreview({ posts, title }: ResearchNotesPreviewProps) {
+export default function BlogsPreview({ posts, title }: BlogsPreviewProps) {
     const locale = useLocaleStore((state) => state.locale);
     const isChinese = locale === 'zh';
     if (posts.length === 0) return null;

@@ -4,7 +4,7 @@ import Profile from '@/components/home/Profile';
 import About from '@/components/home/About';
 import SelectedPublications from '@/components/home/SelectedPublications';
 import News, { NewsItem } from '@/components/home/News';
-import ResearchNotesPreview from '@/components/home/ResearchNotesPreview';
+import BlogsPreview from '@/components/home/BlogsPreview';
 import BlogPage from '@/components/pages/BlogPage';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
@@ -93,7 +93,7 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                     );
                   case 'notes':
                     return (
-                      <ResearchNotesPreview
+                      <BlogsPreview
                         key={section.id}
                         posts={section.posts || []}
                         title={section.title}

@@ -21,7 +21,7 @@ filter = "selected"
 limit = 5
 
 [[sections]]
-id = "research_notes"
+id = "blogs"
 type = "notes"
 title = "精选博客"
 limit = 3
