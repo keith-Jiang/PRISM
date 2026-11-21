@@ -21,10 +21,10 @@ email = [
   "keith.jiang10@gmail.com",
   "j944029213@163.com"
 ]
-location = "Beijing, China"
+location = "Beijing"
 location_url = "https://maps.google.com"
 location_details = [
-  "Peking University, Beijing, China"
+  "Peking University, Beijing"
 ]
 google_scholar = "https://scholar.google.com"
 orcid = "https://orcid.org"
@@ -67,10 +67,10 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Projects"
+title = "Research Notes"
 type = "page"
-target = "projects"
-href = "/projects"
+target = "blogs"
+href = "/blogs"
 
 [[navigation]]
 title = "Educations"

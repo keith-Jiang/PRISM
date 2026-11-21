@@ -13,8 +13,19 @@ link = "https://s.alibaba.com/aaig"
 content = "Focused on safe, reliable, and trustworthy artificial intelligence."
 
 [[items]]
+logo = "/EAX-logo.svg"
+institution = "EvoAgentX"
+department = "HowOne AI"
+major = "Self-Evolving Multi-Agent Framework"
+degree = "Open Source Contributor"
+date = "2025.10 - 2025.12"
+link = "https://github.com/EvoAgentX/EvoAgentX"
+content = "A Self-Evolving Multi-Agent Framework for HowOne AI, featuring automated workflow generation, diverse evolution algorithms, and seamless tool integration."
+tags = ["LLM Agent", "Self-Evolving Agents", "HowOne AI"]
+
+[[items]]
 logo = "/bimsa-logo.png"
-institution = "Qingyan Q-Lab"
+institution = "Q-Lab"
 department = "Beijing Institute of Mathematical Sciences and Applications (BIMSA)"
 major = "LLMs & Open Information Extraction"
 degree = "Research Intern"

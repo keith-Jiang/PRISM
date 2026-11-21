@@ -1,0 +1,34 @@
+type = "card"
+title = "实习经历"
+description = "我的科研与实习经历。"
+
+[[items]]
+logo = "/aaig-logo.png"
+institution = "阿里巴巴集团"
+department = "阿里巴巴人工智能治理与可持续发展实验室（AAIG），阿里巴巴安全部"
+major = "人工智能安全与治理"
+degree = "研究型实习生"
+date = "2026.1 - 至今"
+link = "https://s.alibaba.com/aaig"
+content = "专注于安全、可靠、可信的人工智能研究。"
+
+[[items]]
+logo = "/EAX-logo.svg"
+institution = "EvoAgentX"
+department = "HowOne AI"
+major = "自进化多智能体框架"
+degree = "开源贡献者"
+date = "2025.10 - 2025.12"
+link = "https://github.com/EvoAgentX/EvoAgentX"
+content = "参与 HowOne AI 自进化多智能体框架开发，涉及自动化工作流生成、多种进化算法与工具集成。"
+tags = ["LLM Agent", "自进化智能体", "HowOne AI"]
+
+[[items]]
+logo = "/bimsa-logo.png"
+institution = "Q-Lab"
+department = "北京雁栖湖应用数学研究院（BIMSA）"
+major = "大语言模型与开放信息抽取"
+degree = "研究型实习生"
+date = "2025.3 - 2025.9"
+link = "https://qingyan-qlab.github.io/"
+content = "导师为孙明明研究员，主要研究开放信息抽取（OIE），探索大语言模型与结构化知识表示的结合。"

@@ -3,8 +3,8 @@ title = "About Me"
 
 [profile]
 research_interests = [
-  "LLM Reinforcement Learning",
-  "Self-Evolving Agents"
+  "LLM Knowledge Mechanisms",
+  "LLM Agent"
 ]
 
 [[sections]]
@@ -19,6 +19,12 @@ type = "publications"
 title = "Selected Publications"
 filter = "selected"
 limit = 5
+
+[[sections]]
+id = "research_notes"
+type = "notes"
+title = "Research Notes"
+limit = 3
 
 [[sections]]
 id = "news"

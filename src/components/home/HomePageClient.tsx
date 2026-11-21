@@ -4,17 +4,19 @@ import Profile from '@/components/home/Profile';
 import About from '@/components/home/About';
 import SelectedPublications from '@/components/home/SelectedPublications';
 import News, { NewsItem } from '@/components/home/News';
+import ResearchNotesPreview from '@/components/home/ResearchNotesPreview';
+import BlogPage from '@/components/pages/BlogPage';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
 import type { SiteConfig } from '@/lib/config';
 import { Publication } from '@/types/publication';
-import { CardPageConfig, PublicationPageConfig, TextPageConfig } from '@/types/page';
+import { CardPageConfig, PublicationPageConfig, TextPageConfig, BlogPageConfig, BlogPost } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface SectionConfig {
   id: string;
-  type: 'markdown' | 'publications' | 'list';
+  type: 'markdown' | 'publications' | 'list' | 'notes';
   title?: string;
   source?: string;
   filter?: string;
@@ -22,13 +24,15 @@ interface SectionConfig {
   content?: string;
   publications?: Publication[];
   items?: NewsItem[];
+  posts?: BlogPost[];
 }
 
 type PageData =
   | { type: 'about'; id: string; sections: SectionConfig[] }
   | { type: 'publication'; id: string; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; id: string; config: TextPageConfig; content: string }
-  | { type: 'card'; id: string; config: CardPageConfig };
+  | { type: 'card'; id: string; config: CardPageConfig }
+  | { type: 'blog'; id: string; config: BlogPageConfig };
 
 export interface HomePageLocaleData {
   author: SiteConfig['author'];
@@ -87,6 +91,14 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                         enableOnePageMode={data.enableOnePageMode}
                       />
                     );
+                  case 'notes':
+                    return (
+                      <ResearchNotesPreview
+                        key={section.id}
+                        posts={section.posts || []}
+                        title={section.title}
+                      />
+                    );
                   case 'list':
                     return (
                       <News
@@ -115,6 +127,12 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
               )}
               {page.type === 'card' && (
                 <CardPage
+                  config={page.config}
+                  embedded={true}
+                />
+              )}
+              {page.type === 'blog' && (
+                <BlogPage
                   config={page.config}
                   embedded={true}
                 />

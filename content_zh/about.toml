@@ -3,9 +3,8 @@ title = "关于我"
 
 [profile]
 research_interests = [
-  "计算物理",
-  "数学原理",
-  "定理证明"
+  "大模型知识机理",
+  "LLM Agent"
 ]
 
 [[sections]]
@@ -20,6 +19,12 @@ type = "publications"
 title = "精选论文"
 filter = "selected"
 limit = 5
+
+[[sections]]
+id = "research_notes"
+type = "notes"
+title = "研究笔记"
+limit = 3
 
 [[sections]]
 id = "news"

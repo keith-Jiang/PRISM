@@ -1,0 +1,12 @@
+type = "blog"
+title = "Research Notes"
+description = "Learning notes, experiments, and discoveries from my research."
+
+[[posts]]
+id = "bm25-sparse-retrieval"
+title = "Lesson 01: BM25 Sparse Retrieval"
+date = "2026-11-21"
+description = "A complete walkthrough of BM25, from formulas and tokenization to chunking, offline indexing, and online Top-K retrieval."
+tags = ["RAG systems"]
+reading_time = "30 min"
+author = "Runze Jiang"

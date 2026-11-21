@@ -3,12 +3,12 @@ import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } f
 import { parseBibTeX } from '@/lib/bibtexParser';
 import HomePageClient, { type HomePageLocaleData } from '@/components/home/HomePageClient';
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, BlogPageConfig, BlogPost } from '@/types/page';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 
 interface SectionConfig {
   id: string;
-  type: 'markdown' | 'publications' | 'list';
+  type: 'markdown' | 'publications' | 'list' | 'notes';
   title?: string;
   source?: string;
   filter?: string;
@@ -16,6 +16,7 @@ interface SectionConfig {
   content?: string;
   publications?: Publication[];
   items?: NewsItem[];
+  posts?: BlogPost[];
 }
 
 interface NewsItem {
@@ -27,7 +28,8 @@ type PageData =
   | { type: 'about'; id: string; sections: SectionConfig[] }
   | { type: 'publication'; id: string; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; id: string; config: TextPageConfig; content: string }
-  | { type: 'card'; id: string; config: CardPageConfig };
+  | { type: 'card'; id: string; config: CardPageConfig }
+  | { type: 'blog'; id: string; config: BlogPageConfig };
 
 function processSections(sections: SectionConfig[], locale?: string): SectionConfig[] {
   return sections.map((section: SectionConfig) => {
@@ -46,6 +48,16 @@ function processSections(sections: SectionConfig[], locale?: string): SectionCon
         return {
           ...section,
           publications: filteredPubs.slice(0, section.limit || 5),
+        };
+      }
+      case 'notes': {
+        const notesConfig = getPageConfig('blogs', locale) as BlogPageConfig | null;
+        const posts = [...(notesConfig?.posts || [])]
+          .sort((a, b) => b.date.localeCompare(a.date))
+          .slice(0, section.limit || 3);
+        return {
+          ...section,
+          posts,
         };
       }
       case 'list': {
@@ -113,6 +125,14 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
             type: 'card',
             id: item.target,
             config: pageConfig as CardPageConfig,
+          } as PageData;
+        }
+
+        if (pageConfig.type === 'blog') {
+          return {
+            type: 'blog',
+            id: item.target,
+            config: pageConfig as BlogPageConfig,
           } as PageData;
         }
 

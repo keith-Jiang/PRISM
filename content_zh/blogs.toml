@@ -1,0 +1,12 @@
+type = "blog"
+title = "研究笔记"
+description = "记录科研中的学习过程、实验发现与阶段性思考。"
+
+[[posts]]
+id = "bm25-sparse-retrieval"
+title = "第 01 课：BM25 稀疏召回"
+date = "2026-11-21"
+description = "从公式、分词、切块、离线索引到在线 Top-K 检索，完整拆解 BM25 的原理与实现。"
+tags = ["RAG systems"]
+reading_time = "30 分钟"
+author = "姜润泽"
